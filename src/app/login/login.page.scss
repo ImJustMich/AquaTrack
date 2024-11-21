@@ -1,0 +1,97 @@
+ion-content {
+    --background: none;  // Eliminamos el fondo por defecto
+  
+    background-image: url('/assets/imgs/FondoBuebuja.jpg');  // Ruta de la imagen
+    background-size: cover;  // Para que la imagen cubra todo el fondo
+    background-position: center;  // Centrar la imagen
+    background-repeat: no-repeat;  // Evitar que la imagen se repita
+    height: 100%;
+  }
+  .header-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;  // Color del texto en el header para que contraste bien con el fondo
+  }
+  
+  ion-toolbar {
+    --background: #0d7dba;  // Color de fondo del header
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  /* Mueve todo el contenido más cerca de la parte superior */
+    height: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 100px;  /* Puedes ajustar este valor */
+  }
+  
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;  /* Color del texto principal */
+    text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 50px;
+  }
+  
+  .custom-input {
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  // Pequeña sombra para que se vea más elegante
+  }
+  
+  ion-item {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+  
+  ion-button {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    margin: 10px; /* Margen alrededor del botón */
+    border: 1px solid black; /* Borde negro alrededor del botón */
+  }
+  
+  
+  
+  
+  .links-container {
+    margin-top: 20px;
+    text-align: center;
+  
+    a {
+      text-decoration: none;  /* Sin subrayado */
+      display: inline-block;  /* Para que el padding funcione adecuadamente */
+      padding: 5px;  /* Espaciado interno para el texto */
+    }
+    
+    .link-text {
+      color: #5aa5c3;  /* Color del texto */
+      font-size: 20px;
+      padding: 5px;  /* Espaciado interno */
+      margin: 10px;  /* Margen alrededor del texto */
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      text-decoration: underline;
+    }
+  }
+  
+  .custom-input {
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header-title">AQUATRACK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+    <div class="register-container">
+      <div *ngIf="errorMessage" class="error-message">
+        <ion-text color="danger">
+          <p>{{ errorMessage }}</p>
+        </ion-text>
+      </div>
+      <br><br><br><br>
+      <ion-item>
+        <ion-label position="floating">Nombre Completo</ion-label>
+        <ion-input type="text" class="form-control" formControlName="nombres"></ion-input>
+      </ion-item>
+      
+      <ion-item class="custom-input">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" class="form-control" formControlName="email"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" class="form-control" formControlName="password"></ion-input>
+      </ion-item>
+      <br><br><br><br><br><br>
+      
+      <div class="button-container">
+        <ion-button expand="block" type="submit">Registrarse</ion-button>
+        <ion-button class="volver-button" (click)="goToLogin()">Iniciar sesión</ion-button>
+      </div>
+    </div> 
+  </form>
+</ion-content>

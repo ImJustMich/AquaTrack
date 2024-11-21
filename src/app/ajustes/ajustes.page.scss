@@ -1,0 +1,259 @@
+/* Contenedor de los enlaces del header */
+.links-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links-container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.link-text {
+    color: azure;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Fondo del contenido principal */
+ion-content {
+    --background: #a9cbd5;
+}
+
+/* Estilo de la barra de herramientas */
+ion-toolbar {
+    --background: #0d7dba;
+}
+
+/* Título del header */
+.header-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navbar personalizado */
+ion-header {
+    --background: #4e4caf;
+}
+
+/* Imagen del logo en la navbar */
+.logo-image {
+    width: 50%;
+}
+
+/* Tarjeta del perfil del usuario */
+.profile-card {
+    background-color: #0571D3;
+    padding: 16px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.profile-card ion-button {
+    flex: 0 0 45%;
+    margin: 0 2%;
+    --background: #5aa5c3;
+    --color: #fff;
+    --border-radius: 15px;
+    
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+    flex-grow: 1;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+/* Botones dentro de la tarjeta de perfil */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Tarjeta de información personal */
+.info-card ion-item {
+    --background: #A6A6A6; /* Fondo gris para cada item */
+    color: white; /* Color del texto */
+    --inner-border-width: 0; /* Elimina bordes internos */
+    --padding-start: 0; /* Sin padding inicial */
+    --padding-end: 0; /* Sin padding final */
+    --border-radius: 0; /* Bordes rectos */
+}
+
+ion-card-title {
+    color: #fff;
+    font-size: 30px;
+}
+
+.info-card ion-list {
+    background-color: #A6A6A6; /* Fondo gris para la lista */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 10px; /* Espaciado interno */
+}
+
+.info-card ion-button {
+    --background: #172335;
+    --color: azure;
+    --border-radius: 50px;
+    width: 50%; 
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 20px; 
+}
+
+
+/* Tarjeta de datos del servicio */
+.service-data-card {
+    background-color: #91c5d8;
+    color: azure;
+    border-radius: 50px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; /* Ocupar toda la fila debajo de info-card */
+    margin-top: 0; /* Espaciado superior */
+}
+
+.service-data-card ion-item {
+    --background: #1c83ce; 
+    color: white; 
+    --inner-border-width: 0; 
+    --padding-start: 0;
+    --padding-end: 0; 
+    --border-radius: 0;
+}
+
+.service-data-card ion-list {
+    background-color: #1c83ce;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.service-data-card ion-button {
+    --background: #172335;
+    --color: azure;
+    --border-radius: 50px;
+    width: 50%; 
+    margin: 0 auto; 
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+/* Grid personalizado */
+ion-row {
+    display: flex; /* Flexbox para el control del diseño */
+    flex-wrap: wrap; /* Permitir que los elementos salten a la siguiente línea */
+    justify-content: center; /* Centrar los elementos */
+}
+
+ion-col {
+    flex: 0 0 33%; /* Cada columna ocupa un tercio del ancho disponible */
+}
+
+
+
+/* Contenedor principal para las tarjetas */
+.card-container {
+    display: grid; /* Activamos Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 30px; /* Reducimos el espaciado entre las filas y columnas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+  }
+  
+  /* Perfil y Cuenta Personal ocupan una celda cada uno */
+  .profile-card {
+    grid-column: span 1; /* Ocupa una columna */
+    background-color: #0571D3;
+    height: 650px;
+    border-radius: 50px;
+  }
+  
+  .info-card {
+    grid-column: span 1; /* Ocupa una columna */
+    background-color: #5aa5c3;
+    height: 200px;
+    border-radius: 50px;
+  }
+  
+  /* Datos de Servicio se posiciona en la siguiente fila */
+  .service-data-card {
+    grid-column: 2 / 3; /* Empieza en la segunda columna */
+    background-color: #1c83ce;
+    height: 450px;
+    border-radius: 50px;
+    margin-top: -450px; /* Reduce el espacio entre la tarjeta de datos de servicio y la de cuenta personal */
+  }
+
+  .device-card {
+    grid-column: span 1; /* Ocupa una columna */
+    background-color: #0d7dba; /* Un color diferente para la tarjeta */
+    color: white;
+    height: 450px; /* Altura personalizada para esta tarjeta */
+    border-radius: 50px; /* Esquinas redondeadas */
+    margin-top: -450px; 
+  }
+  
+  /* Subtítulo en la tarjeta de dispositivo */
+  .device-card ion-card-header {
+    padding-bottom: 0; /* Quitamos padding extra en la parte inferior */
+  }
+  
+  .device-card ion-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Espacio debajo del título */
+    font-size: 30px;
+  }
+  
+  /* Línea separadora debajo del subtítulo */
+  .divider-line {
+    height: 2px;
+    background-color: #000; /* Línea blanca */
+    margin-bottom: 20px; /* Espacio después de la línea */
+  }
+  
+  /* Contenido de la tarjeta de Dispositivo */
+  .device-card ion-card-content {
+    padding: 10px;
+    font-size: 14px;
+    color: #f2f2f2; /* Color de texto claro */
+  }
+
+  .device-card ion-button {
+    --background: #172335;
+    --color: azure;
+    --border-radius: 50px;
+    width: 50%; 
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 20px; 
+}
+.device-card ion-item{
+    --background: #0d7dba;
+    
+}
+    

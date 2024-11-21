@@ -1,0 +1,88 @@
+ion-content {
+    --background: #b9d4df;  /* Color de fondo de la página */
+    height: 100%;
+  }
+  
+  .header-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;  /* Color del texto en el header para que contraste bien con el fondo */
+  }
+  ion-toolbar {
+      --background: #0d7dba;  // Color de fondo del header
+    }
+  
+    .register-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;  /* Mueve todo el contenido más cerca de la parte superior */
+      height: 100%;
+      max-width: 1300px;
+      margin: auto;
+      background: #91c5d8;  /* Color de fondo del cuadrado */
+      padding: 20px;
+      border-radius: 10px;  /* Bordes redondeados */
+    }
+    
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: white;  /* Color del texto del título */
+      text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    
+    .custom-input {
+      background: white;
+      width: 100%;
+      margin-bottom: 15px;
+      color: #000;
+    }
+    
+    ion-item {
+      display: flex;  /* Hacer que el elemento ion-item use flexbox */
+      align-items: center;  /* Centrar verticalmente los elementos dentro */
+      width: 100%;
+      max-width: 1300px;
+      --border-radius: 0%;
+    }
+    
+    ion-label {
+      flex: 1;  /* Hacer que el label ocupe el espacio necesario */
+      margin-right: 30px; /* Añadir margen derecho para separación */
+    }
+    
+    ion-input {
+      flex: 2;  /* Hacer que el input ocupe el doble de espacio que el label */
+    }
+  
+  
+  .button-container {
+      display: flex;  /* Usar flexbox para alinear los botones */
+      justify-content: center;  /* Centrar los botones en el contenedor */
+      width: 100%;  /* Asegurar que el contenedor ocupe el ancho completo */
+      margin-top: 20px;  /* Espaciado arriba del contenedor de botones */
+    }
+    
+    ion-button {
+      flex: 0 0 45%;  /* Ajustar el ancho de los botones */ 
+      margin: 0 2%;  /* Espaciado reducido entre los botones */
+      --background: #5aa5c3;
+      --color: #fff;
+    }
+    
+    .register-btn {
+      color: white;  /* Color del texto del botón */
+    }
+    
+    .login-btn {
+      color: white;  /* Color del texto del botón */
+    }
+
+.register-container ion-item{
+  --background: #91c5d8;
+  color: #000
+
+}
+  

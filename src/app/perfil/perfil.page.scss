@@ -1,0 +1,170 @@
+.links-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links-container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.link-text {
+    color: azure;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+ion-content {
+    --background: #56b9e1;
+}
+
+ion-toolbar {
+    --background: #0d7dba;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navbar personalizado */
+ion-header {
+    --background: #4e4caf;
+}
+
+/* Imagen del logo en la navbar */
+.logo-image {
+    width: 50%;
+}
+
+/* Tarjeta del perfil del usuario */
+.profile-card {
+    background-color: #0571D3;
+    padding: 16px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+    flex-grow: 1;
+}
+
+/* Estilos para la imagen de perfil de "michi" */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+/* Botones dentro de la tarjeta de perfil */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-card ion-button {
+    flex: 0 0 45%;
+    margin: 0 2%;
+    --background: #5aa5c3;
+    --color: #fff;
+    --border-radius: 15px;
+}
+
+
+.info-card ion-item {
+    --background: #A6A6A6; /* Fondo gris para cada item */
+    color: white; /* Cambia el color de texto si es necesario */
+    --inner-border-width: 0; /* Elimina cualquier borde interno */
+    --padding-start: 0; /* Quita el padding inicial */
+    --padding-end: 0; /* Quita el padding final */
+    --border-radius: 0; /* Asegura que no haya bordes redondeados */
+}
+
+ion-card-title{
+    color: #fff;
+}
+
+/* Fondo y color de texto para el contenedor de la lista en la info-card */
+.info-card ion-list {
+    background-color: #A6A6A6; /* Color de fondo gris para la lista completa */
+    border-radius: 15px; /* Opcional: esquinas redondeadas para el contenedor de la lista */
+    padding: 10px; /* Espaciado interno para el contenido de la lista */
+}
+
+
+
+.info-card ion-button {
+    --background: #6b6868;
+    --color: azure;
+    --border-radius: 50px;
+    width: 50%; /* Ajusta el ancho del botón */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    margin-top: auto;
+    margin-bottom: 20px; /* Espacio al final de la tarjeta */
+}
+
+/* Tarjeta de información de usuarios */
+.info-card {
+    background-color: #A6A6A6;
+    color: azure;
+    border-radius: 50px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+
+.service-data-card {
+    background-color: #91c5d8;
+    color: azure;
+    border-radius: 50px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.service-data-card ion-item {
+    --background: #91c5d8; 
+    color: white; 
+    --inner-border-width: 0; 
+    --padding-start: 0;
+    --padding-end: 0; 
+    --border-radius: 0;
+}
+
+.service-data-card ion-list {
+    background-color: #91c5d8;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.service-data-card ion-button {
+    --background: #0d7dba;
+    --color: azure;
+    --border-radius: 50px;
+    width: 50%; 
+    margin: 0 auto; 
+    margin-top: auto;
+    margin-bottom: 20px;
+}

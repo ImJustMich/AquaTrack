@@ -1,22 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
 import { UserService } from 'src/services/user.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: 'perfil.page.html',
+  styleUrls: ['perfil.page.scss'],
 })
-export class HomePage implements OnInit{
+export class PerfilPage implements OnInit{
 
   constructor(
     private userService:UserService,
     private router: Router,
-    private alertController: AlertController
   ) {}
 
-  ngOnInit(): void{
+  ngOnInit() {
   }
 
   onClick(){
@@ -26,4 +24,9 @@ export class HomePage implements OnInit{
       })
       .catch(error => console.log(error));
     }
+
+    goToAjustes() {
+      this.router.navigate(['/ajustes']);
+    }
+
 }

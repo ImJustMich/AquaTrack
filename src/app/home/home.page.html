@@ -1,20 +1,30 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title style="text-align: left; color: white; font-weight: bold;">AQUATRACK</ion-title>
+    <div class="links-container" slot="end">
+      <a href="/home" ><span class="link-text">Inicio   |</span></a>
+      <a href="/perfil"><span class="link-text">Perfil   |</span></a>
+      <a href="#"><span class="link-text">Consumo   |</span></a>
+      <a href="#"><span class="link-text">Dispositivo  |</span></a>
+      <a href="#"><span class="link-text">Consejos  |</span></a>
+      <a href="#"><span class="link-text">Usuarios</span></a>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="image-container">
+    <div class="image-box">
+      <img src="/assets/imgs/Imagen 1.png" alt="Imagen 1">
+      <ion-button expand="full">Ver más</ion-button>
+    </div>
+    <div class="image-box">
+      <img src="/assets/imgs/Imagen 2.png" alt="Imagen 2">
+      <ion-button expand="full">Ver más</ion-button>
+    </div>
+    <div class="image-box">
+      <img src="/assets/imgs/Imagen 3.png" alt="Imagen 3">
+      <ion-button expand="full">Ver más</ion-button>
+    </div>
   </div>
 </ion-content>

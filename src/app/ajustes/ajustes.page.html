@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: left; color: white; font-weight: bold;">AQUATRACK</ion-title>
+    <div class="links-container" slot="end">
+      <a href="/home"><span class="link-text">Inicio |</span></a>
+      <a href="/perfil"><span class="link-text">Perfil |</span></a>
+      <a href="#"><span class="link-text">Consumo |</span></a>
+      <a href="#"><span class="link-text">Dispositivo |</span></a>
+      <a href="#"><span class="link-text">Consejos |</span></a>
+      <a href="#"><span class="link-text">Usuarios</span></a>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding custom-background">
+  <div class="card-container">
+    <!-- Profile Card -->
+    <ion-card class="profile-card">
+      <ion-card-content>
+        <div class="profile-image-container">
+          <img src="/assets/imgs/michi.png" class="profile-image" />
+          <ion-text color="light">
+            <h2><strong>Usuario</strong></h2>
+            <p><strong>Editar</strong></p>
+          </ion-text>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="button-container">
+          <ion-button (click)="onClick()">
+            Cerrar sesión
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Info Card -->
+    <ion-card class="info-card">
+      <ion-card-header>
+        <ion-card-title style="align-self: center;">Cuenta personal</ion-card-title>
+      </ion-card-header>
+      <br><br><br>
+      <ion-card-content>
+        <ion-button href="#" expand="block">Eliminar cuenta</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <img src="/assets/imgs/Ajustes.png" alt="Ajustes" class="ajustes-image" />
+
+    <!-- Service Data Card -->
+    <ion-card class="service-data-card">
+      <ion-card-header>
+        <ion-card-title>Datos de servicio</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Datos sobre quienes te ofrecen agua y su precio para nuestros análisis.</p>
+        <div class="divider-line"></div>
+        <ion-list>
+          <ion-item>
+            <ion-label><strong>Proveedor:</strong></ion-label>
+            <ion-label slot="end">Proveedor1</ion-label>
+          </ion-item>
+          <div class="divider-line"></div>
+          <ion-item>
+            <ion-label><strong>Cobro:</strong></ion-label>
+            <ion-label slot="end">$xxx</ion-label>
+          </ion-item>
+          <div class="divider-line"></div>
+          <ion-item>
+            <ion-label><strong>Tipo de hogar:</strong></ion-label>
+            <ion-label slot="end">Casa</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-button href="#" expand="block">Editar</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="device-card">
+      <ion-card-header>
+        <ion-card-title>Dispositivo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Opciones para nuestro dispositivo medidor</p>
+        <div class="divider-line"></div>
+        <ion-item>
+          <ion-label><strong>Actual</strong></ion-label>
+          <ion-label slot="end">XXXXXXXXX</ion-label>
+        </ion-item>
+      </ion-card-content>
+      
+      <br><br><br><br><br><br><br><br><br><br>
+      <ion-button href="#" expand="block">Desconectar</ion-button>
+    </ion-card>
+
+  </div>
+</ion-content>

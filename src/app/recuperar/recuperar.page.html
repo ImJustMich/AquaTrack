@@ -1,0 +1,15 @@
+<ion-content style="--background: #b9d4df;">
+  <ion-button class="volver-button" (click)="goToLogin()">Volver</ion-button>
+  <form class="ion-padding-top" (submit)="sendLinkReset()">
+    <div class="container">
+      <div class="box">
+        <h2>Cambio de contraseña</h2>
+        <ion-item lines="none">
+          <ion-label position="floating">Ingresa tu correo</ion-label>
+          <ion-input type="text" [(ngModel)]="email" name="email" required="true"></ion-input>
+        </ion-item>
+        <ion-button expand="block" class="submit-button" type="submit">Enviar</ion-button>
+      </div>
+    </div>
+  </form>  
+</ion-content>
